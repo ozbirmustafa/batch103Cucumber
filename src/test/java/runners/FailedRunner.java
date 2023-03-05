@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -14,10 +13,9 @@ import org.junit.runner.RunWith;
                 "rerun:target/failed_scenarios.txt"
         },
         monochrome = true, // raporların konsolda daha okunaklı şekilde çıkması için
-        features = "./src/test/resources/features",
+        features = "@target/failed_scenarios.txt",  //txt dosya path
         glue = {"stepdefinitions","hooks"} ,
-        tags = "@failed_scenario",
         dryRun = false
 )
-public class Runner {
+public class FailedRunner {
 }

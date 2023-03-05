@@ -21,10 +21,10 @@ public class ExcelStepDefinitions {
     List<Map<String,String>> excelData;
 
     @Given("kullanici {string} bilgileri ile giris yapar")
-    public void kullanici_bilgileri_ile_giris_yapar(String string) throws IOException {
+    public void kullanici_bilgileri_ile_giris_yapar(String sayfaAdi) throws IOException {
         String path="C:\\Users\\pc\\IdeaProjects\\batch103Cucumber\\src\\test\\resources\\testdata\\mysmoketestdata.xlsx";
-        String sayfa = "customer_info";
-        excelUtils = new ExcelUtils(path,sayfa);
+        //String sayfa = "customer_info";
+        excelUtils = new ExcelUtils(path,sayfaAdi);
         excelData = excelUtils.getDataList();
         System.out.println("excelData = " + excelData);
         for (Map<String,String> data : excelData) {
