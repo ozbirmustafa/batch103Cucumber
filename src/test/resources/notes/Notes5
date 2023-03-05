@@ -1,0 +1,5 @@
+1.resources klasorunde extent-config.xml
+2.resources klasorunde extent.properties
+3. Spark report dependency pom a ekle: https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter/1.6.0
+4. Spark report plugin i Runner a ekle
+"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"

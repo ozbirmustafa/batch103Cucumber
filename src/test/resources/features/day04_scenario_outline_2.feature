@@ -2,6 +2,7 @@
 Feature: personel_olusturma
   Scenario Outline: TC01_create_personal
 
+
     Given kullanici "https://editor.datatables.net/" gider
     When kullanici new butonuna tiklar
     And kullanici firstname "<firstname>" girer

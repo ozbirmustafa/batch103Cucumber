@@ -39,8 +39,8 @@ public class GoogleStepDefinitions {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("tesla"));
     }
 
-    @When("kullanici {string} için arama yapar")
-    public void kullaniciIçinAramaYapar(String arg0) {
+    @When("kullanici {string} icin arama yapar")
+    public void kullaniciIcinAramaYapar(String arg0) {
         googlePage.searchBox.sendKeys(arg0 + Keys.ENTER);
     }
 
