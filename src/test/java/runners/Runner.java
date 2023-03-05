@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         monochrome = true, // raporların konsolda daha okunaklı şekilde çıkması için
         features = "./src/test/resources/features",
         glue = {"stepdefinitions","hooks"} ,
-        tags = "@failed_scenario",
+        tags = "@excel_automation",
         dryRun = false
 )
 public class Runner {
